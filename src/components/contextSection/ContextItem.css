@@ -7,6 +7,11 @@
     box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
     margin: 1.5em;
     padding: 1.7em;
+    transition: transform .5s ease-out;
+}
+
+.card--context:hover {
+    transform: perspective(31.25rem) translateZ(1.25rem);
 }
 
 .card_context--flex {
