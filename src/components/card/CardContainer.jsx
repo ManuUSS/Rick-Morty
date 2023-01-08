@@ -32,5 +32,5 @@ CardContainer.propTypes = {
   name: PropTypes.string,
   status: PropTypes.string,
   specie: PropTypes.string,
-  location: PropTypes.string,
+  location: PropTypes.object,
 }

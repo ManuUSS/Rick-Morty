@@ -6,12 +6,10 @@
   margin: 1em;
 }
 
-
-
-.context div:nth-child(7) {
+.context div:nth-child(8) {
   background-color: aqua;
-  
   height: 100%;
   grid-column: 1/4;
   grid-row: 4/5;
 }
+

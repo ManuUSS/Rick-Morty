@@ -1,13 +1,35 @@
-.card {
+.card--context {
     -moz-box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
     -webkit-box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
+    animation: enterCard 4s linear 1s 1 normal none;
     background-color: #ffffff;
+    border-radius: 5px;
     box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
+    margin: 1.5em;
+    padding: 1.7em;
 }
 
 .card--relative {
     position: relative;
     overflow: hidden;
+}
+
+.card--flex {
+    display: flex;
+}
+
+.flex--colum {
+    flex-direction: column;
+}
+
+.card--flex.card--center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card--gray{
+    color: #acacac;
 }
 
 .img__card {
@@ -17,9 +39,25 @@
 .img__card.img--bottom {
     bottom: 0;
 }
+
 .img__card.img--right {
     right: 0;
 }
+
 .img__card.img--left {
     left: 0;
 }
+
+.img__card.img--z-cero{
+    z-index: 0;
+}
+
+
+@keyframes enterCard {
+    from{
+      transform: perspective( 200px ) translateZ( -45px );
+    }
+    to {
+      transform: translateZ(0);
+    }
+  }
