@@ -1,0 +1,42 @@
+
+.shadow--normal {
+    box-shadow: 0 3px 8px 3px rgba(0,0,0,0.15);
+}
+
+.shadow--soft {
+    box-shadow: 0 3px 8px 3px rgba(0,0,0,0.15);
+}
+
+.input--search {
+    border-radius: 25px;
+    border: none;
+    font-size: 1.25em;
+    padding: 8px 40px 8px 20px;
+}
+
+.input--search:focus {
+    outline: none;
+    outline: 2px #36bba9 solid;
+}
+
+.input_btn_wrapper {
+    display: inline;
+}
+
+.input--btn {
+    outline: none;
+    border: none;
+    top: 0;
+    left: 0;
+    background-color: #36bba9;
+    padding: 12px 14px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color .2s linear;
+    cursor: pointer;
+    margin: 0 0.3125em; 
+}
+
+.input--btn:hover {
+    background-color: #2a7e73;
+}

@@ -1,0 +1,62 @@
+.btn {
+    border: none;
+    background-color: inherit;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn--icon {
+    font-family: Montserrat;
+    color: #acacac;
+    transition: color .4s ease-in;
+}
+
+.btn--icon:hover {
+    color: #474747;
+}
+
+.section--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section--secondary {
+    color: #acacac;
+}
+
+.section--btn {
+    align-self: flex-end;
+}
+
+.caption__principal span {
+    margin-left: 5px;
+} 
+
+.section span,
+.caption__principal h4 { 
+    font-weight: 600;
+}
+
+.caption__principal h4 {
+    font-size: 1.125rem;
+}
+
+
+.alive {
+    color: #36bba9;
+}
+
+.dead {
+    color: #bb3636;
+}
+
+.unknown {
+    color: #3638bb;
+}

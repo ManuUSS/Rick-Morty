@@ -1,0 +1,7 @@
+.card-grid--flex {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}

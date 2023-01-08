@@ -1,0 +1,17 @@
+.context {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(2, 1fr) 1.5fr;
+  gap: 10px;
+  margin: 1em;
+}
+
+
+
+.context div:nth-child(7) {
+  background-color: aqua;
+  
+  height: 100%;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}

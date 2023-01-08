@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    color: #36bba9;    
+    font-weight: 600;
+    transition: all .4s linear;
+}
+
+a:hover {
+    color: #2a7e73;
+}
+
+.active {
+    color: #2a7e73;
+    text-decoration: underline;
+}
+
+a:nth-child(even) {
+    padding: 0 0.8em;
+}

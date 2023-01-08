@@ -1,0 +1,6 @@
+.paginator_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 5em 1em 5em;
+}

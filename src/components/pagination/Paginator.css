@@ -1,0 +1,16 @@
+.btn--paginator {
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    border: none;
+    margin: 0 2px;
+    outline: none;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.btn--paginator:hover {
+    background-color: #36bba9;
+    color: #ffffff;
+}

@@ -1,0 +1,12 @@
+img.rick-morty {
+    max-width: 10em;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 4em;
+    border-bottom: 1px solid #e6e5e5;
+    background-color: #ffffff;
+}

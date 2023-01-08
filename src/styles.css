@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    background-color: rgb(234, 234, 234);
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+  
+::-webkit-scrollbar-track {
+    background: #36bba9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(22, 22, 12);
+    border: 0.15em solid rgb(194, 235, 11); 
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+}

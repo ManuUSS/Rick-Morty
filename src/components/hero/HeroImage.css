@@ -1,0 +1,10 @@
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}

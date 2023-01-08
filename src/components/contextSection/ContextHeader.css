@@ -1,0 +1,13 @@
+.context__header {
+    height: auto;
+    grid-column: 1/4;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.context__header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
