@@ -1,14 +1,5 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'
-import './CardCaption.css'
-
-const unknown = ( status ) => {
-  status === 'unknown' ? " unknown" : "";
-}
-
-const aliveOrDead = ( status ) => {
-  status === 'alive' ? " alive" : "dead";
-}
+import './CardCaption.css';
 
 export const CardCaption = ({ name, status, specie, location }) => {
   return (

@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { CardContainer } from '.';
 import { Loader } from '../shared';
 import { useFetchCharacters } from '../../hooks/useFetchCharacters';
 import './CardGrid.css';
 
 
-export const CardQuery = ({className, query }) => {
+export const CardQuery = ({ className, query }) => {
 
     const { characters, isLoading } = useFetchCharacters( query );
 
@@ -30,4 +31,9 @@ export const CardQuery = ({className, query }) => {
         </>
         
     )
+}
+
+
+CardQuery.propTypes = {
+    className: PropTypes.string
 }

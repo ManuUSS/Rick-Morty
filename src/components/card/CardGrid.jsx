@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'; 
 import { CardContainer } from "./CardContainer";
 import './CardGrid.css';
 
@@ -23,4 +24,10 @@ export const CardGrid = ({ characters }) => {
         
     )
 
+}
+
+//Define las propiedades del componente y su tipo
+//Esto no sería necesario en caso de utilizar Typescript
+CardGrid.propTypes = {
+    characters: PropTypes.array.isRequired
 }
