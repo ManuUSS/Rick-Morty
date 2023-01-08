@@ -5,8 +5,7 @@ import './NavMenu.css';
 //Representa los enlaces de navegación en el menú
 const navItems = [ 
         { display: 'Lista de Personajes', path: 'list' }, 
-        { display: 'Buscar un personaje', path: 'search'},
-        { display: 'Acerca de', path: 'about'}
+        { display: 'Buscar un personaje', path: 'search'}
     ];
 
 export const NavMenu = () => {
