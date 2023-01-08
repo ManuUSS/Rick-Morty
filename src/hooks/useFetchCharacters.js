@@ -9,11 +9,10 @@ export const useFetchCharacters = ( query ) => {
     
     //Se maneja el estado para mostrar o no un cargado mientras se finaliza
     //la petición al API
-    const [ isLoading, setisLoading ] = useState( true );
+    const [ isLoading, setisLoading ] = useState( false );
 
     //Realiza la petición al API de Rick & Morty, trae resultados por nombre
     const getCharacters = async () => {
-        console.log( query );
         if( !query ) return;
         const charactersResponse = await getCharacterByName( query );
         setCharacters( charactersResponse );

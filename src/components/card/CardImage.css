@@ -1,4 +1,5 @@
 .image__wrapper {
-    display: inline;
-    flex: 2 1 0%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }

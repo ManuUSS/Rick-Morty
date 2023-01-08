@@ -8,7 +8,7 @@ export const NavItem = ({ title, path }) => {
   return (
     //Se realiza una validación para agregar una clase condicional según si el enlace es activo o no
     <NavLink 
-        className={({ isActive }) => `${ isActive ? 'active': '' }`} 
+        className={({ isActive }) => `nav__a ${ isActive ? 'active': '' }`} 
         to={`/${path}`}
     >
         { title } 
@@ -20,6 +20,6 @@ export const NavItem = ({ title, path }) => {
 //Esto no sería necesario en caso de utilizar Typescript
 NavItem.propTypes = {
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
+    path: PropTypes.string.isRequired
 }
 

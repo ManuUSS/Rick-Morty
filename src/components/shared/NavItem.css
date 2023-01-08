@@ -1,11 +1,11 @@
-a {
+.nav__a {
     text-decoration: none;
     color: #36bba9;    
     font-weight: 600;
     transition: all .4s linear;
 }
 
-a:hover {
+.nav__a:hover {
     color: #2a7e73;
 }
 
@@ -14,6 +14,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:nth-child(even) {
+.nav__a:nth-child(even) {
     padding: 0 0.8em;
 }

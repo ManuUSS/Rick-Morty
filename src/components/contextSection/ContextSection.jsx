@@ -1,5 +1,4 @@
-import { ContextHeader } from './ContextHeader';
-import { ContextItem } from './ContextItem';
+import { ContextHeader, ContextItem } from './';
 import './ContextSection.css';
 
 export const ContextSection = () => {
@@ -38,16 +37,30 @@ export const ContextSection = () => {
             text='¡Más de 60 Capítulos!'
             pClassName="card--gray"
             obj={
-                <img src="../src/assets/rick&morty_portal.png"
-                    className="img__card img--z-cero"
-                    height={320}
+                <img src="https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-monsters-transparent-png-stickpng-2.png"
+                    className="img__card img--bottom-plus"
+                    height={150}
                 >
                 </img>
             }
         />
         <ContextItem 
-            header='3'
-            text=''
+            header='Como dijo Morty'
+            obj={
+                <>
+                    <blockquote>Podríamos disfrutarlo un rato. Es decir, mira lo loco que es todo
+                        <br />
+                        <quote>-Morty</quote>
+                    </blockquote>
+                    <img src="https://assets.stickpng.com/thumbs/58f37709a4fa116215a9240d.png"
+                        className="img__card img--bottom img--right"
+                        id="rick-sit"
+                        height={150}
+                    >
+
+                    </img>
+                </>
+            }
         />
         <ContextItem 
             className="card--flex card--center flex--colum"

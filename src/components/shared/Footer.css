@@ -26,6 +26,12 @@
   justify-content: center;
 }
 
+.footer_wrapper__secondary__icons a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .footer_wrapper__secondary__icons i {
   border-radius: 50%;
   font-size: 2em;

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import { CardCaption, CardImage } from "./";
+import { CardCaption, CardImage } from ".";
 import './CardContainer.css';
 
 //Al no utilizar un Context y Provider este componente trabaja como un puente

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import { CardContainer } from "./CardContainer";
+import { CardContainer } from ".";
 import './CardGrid.css';
 
 export const CardGrid = ({ characters }) => {
@@ -7,6 +7,9 @@ export const CardGrid = ({ characters }) => {
     
     return (
         <section className="card-grid--flex">
+            {
+                !characters && (<h1>No se han encontrado resultados...</h1>)
+            }
             {
                 characters && characters.map( ( character, i ) => (
                     <CardContainer 

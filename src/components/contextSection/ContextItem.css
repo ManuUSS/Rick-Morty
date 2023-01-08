@@ -40,6 +40,10 @@
     bottom: 0;
 }
 
+.img--bottom-plus {
+    bottom: -27px;
+}
+
 .img__card.img--right {
     right: 0;
 }
@@ -48,9 +52,14 @@
     left: 0;
 }
 
-.img__card.img--z-cero{
-    z-index: 0;
+.img__card.img--top {
+    top: 0;
 }
+
+#rick-sit{
+    transform: scaleX(-1);
+}
+
 
 
 @keyframes enterCard {

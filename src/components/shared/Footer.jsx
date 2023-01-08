@@ -1,4 +1,5 @@
 import './Footer.css'
+import { FooterLink } from './FooterLink'
 
 export const Footer = () => {
   return (
@@ -7,12 +8,20 @@ export const Footer = () => {
           <h3 className="footer_wrapper__main__h3">Manuel Ulate Sancho</h3>
         </div>
         <div className="footer_wrapper__secondary">
-          <span className="footer_wrapper__secondary__span">Tecnologías utilizadas</span>
+          <span className="footer_wrapper__secondary__span">Contacta en</span>
           <div className="footer_wrapper__secondary__icons">
-            <i className="fa-brands fa-css3-alt"></i>
-            <i className="fa-brands fa-js"></i>
-            <i className="fa-brands fa-html5"></i>
-            <i className="fa-brands fa-react"></i>
+            <FooterLink 
+              url="https://www.linkedin.com/in/manuel-ulate-sancho/"
+              children={<i className="fa-brands fa-linkedin"></i>}
+            />
+            <FooterLink
+              url="https://github.com/ManuUSS"
+              children={<i className="fa-brands fa-github"></i>}
+            />
+            <FooterLink 
+              url="https://www.instagram.com/manuel_ulateee/"
+              children={<i className="fa-brands fa-instagram"></i>}
+            />
           </div>
         </div>
     </footer>
