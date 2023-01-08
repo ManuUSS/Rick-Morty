@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { NavMenu } from "../components/shared/";
 import { HomePage } from "./HomePage";
 import { ListPage } from "./ListPage";
@@ -14,8 +14,8 @@ export const MainPage = () => {
               <Route  path="/" element={ <HomePage /> } />
               <Route  path="/list" element={ <ListPage /> } />
               <Route  path="/search" element={ <SearchPage /> } />
-              <Route path="/*" element={ <NotFoundPage /> } />
-              {/* <Route  path="/about" element={  } /> */}
+              {/* Manejo de excepción para cuando se ingresa una ruta no existente */}
+              <Route path="/*" element={ <Navigate to="/" /> } />
           </Routes>
         </main>
     </>

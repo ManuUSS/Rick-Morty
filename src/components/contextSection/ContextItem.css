@@ -1,7 +1,6 @@
 .card--context {
     -moz-box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
     -webkit-box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
-    animation: enterCard 4s linear 1s 1 normal none;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: -2px 2px 14px -5px rgba(0,0,0,0.65);
@@ -71,14 +70,3 @@
 #rick-sit{
     transform: scaleX(-1);
 }
-
-
-
-@keyframes enterCard {
-    from{
-      transform: perspective( 200px ) translateZ( -45px );
-    }
-    to {
-      transform: translateZ(0);
-    }
-  }
