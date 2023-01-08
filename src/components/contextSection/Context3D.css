@@ -1,0 +1,28 @@
+.card_context_3d_info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card_context_3d_info > a {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    color: #36bba9;
+}
+
+.card_context_3d__visit {
+    display: inline;
+    align-self: center;
+}
+
+.card_context--icons,
+.card_context--icons i {
+    text-align: end;
+    color: #a8a8a8;
+}
+
+.card_context--icons .icons--wrapper {
+    align-self: flex-end;
+    justify-content: flex-end;
+}

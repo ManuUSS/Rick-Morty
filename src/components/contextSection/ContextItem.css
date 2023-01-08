@@ -9,6 +9,13 @@
     padding: 1.7em;
 }
 
+.card_context--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 .card--relative {
     position: relative;
     overflow: hidden;

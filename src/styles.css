@@ -10,6 +10,38 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
+
+.icons--wrapper{
+    align-items: center;
+    color: #e4e4e4;
+    display: flex;
+    gap: 0.625em;
+    justify-content: center;
+}
+
+.icons--wrapper a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+  
+.icons--wrapper i {
+    border-radius: 50%;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.3em  0.35em;
+    background-color: inherit;
+}
+
+.icons--hover {
+    transition: background-color .4s ease-in-out;
+}
+  
+.icons--hover i:hover {
+    background-color: rgba(194, 194, 194, .2);
+}
+  
+
 ::-webkit-scrollbar {
     width: 1em;
     height: 1em;

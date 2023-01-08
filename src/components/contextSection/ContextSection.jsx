@@ -1,4 +1,5 @@
 import { ContextHeader, ContextItem } from './';
+import { Context3D } from './Context3D';
 import './ContextSection.css';
 
 export const ContextSection = () => {
@@ -65,11 +66,11 @@ export const ContextSection = () => {
         <ContextItem 
             className="card--flex card--center flex--colum"
             header='¡Visita el API para más información!'
-            obj={<a target="_blank" href="https://rickandmortyapi.com/">
+            obj={<a className="nav__a" target="_blank" href="https://rickandmortyapi.com/">
                     <h4>Da click aquí</h4>
                 </a>}
         />
-        <div></div>
+        <Context3D />
     </section>
   )
 }

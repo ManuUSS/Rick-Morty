@@ -9,7 +9,7 @@ export const Footer = () => {
         </div>
         <div className="footer_wrapper__secondary">
           <span className="footer_wrapper__secondary__span">Contacta en</span>
-          <div className="footer_wrapper__secondary__icons">
+          <div className="icons--wrapper icons--hover">
             <FooterLink 
               url="https://www.linkedin.com/in/manuel-ulate-sancho/"
               children={<i className="fa-brands fa-linkedin"></i>}
