@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 
 export const FooterLink = ({url, children}) => {
   return (
@@ -9,4 +9,9 @@ export const FooterLink = ({url, children}) => {
         {children}
     </a>
   )
+}
+
+FooterLink.propTypes = {
+    url: PropTypes.string.isRequired,
+    children: PropTypes.object
 }
