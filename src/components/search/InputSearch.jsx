@@ -39,6 +39,7 @@ export const InputSearch = ({ onNewSearch }) => {
             placeholder="Busca un personaje..."
             required 
             className="input--search shadow--normal"
+            value={inputValue}
             onChange={ handleInputChange }
         />
         <button 
