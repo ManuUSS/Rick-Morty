@@ -1,5 +1,4 @@
-import { ContextHeader, ContextItem } from './';
-import { Context3D } from './Context3D';
+import { ContextHeader, ContextItem, ContextFooter } from './';
 import './ContextSection.css';
 
 export const ContextSection = () => {
@@ -20,9 +19,9 @@ export const ContextSection = () => {
             text='Aunque esta serie animada cuenta con una gran cantidad de personajes en ella,
             se mencionan que algunos de los más importantes son: Rick Sanchez, Morty, Summer, Beth y Jerry'
             obj={ 
-                <img src="../src/assets/morty.png" alt='Morty' 
+                <img src="../src/assets/boladenieve.png" alt='Morty' 
                     className='img__card img--bottom img--left' 
-                    height={100}
+                    height={130}
                 /> 
             }
         />
@@ -70,7 +69,7 @@ export const ContextSection = () => {
                     <h4>Da click aquí</h4>
                 </a>}
         />
-        <Context3D />
+        <ContextFooter />
     </section>
   )
 }
