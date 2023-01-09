@@ -52,7 +52,7 @@ export const ContextSection = () => {
                         <br />
                         <quote>-Morty</quote>
                     </blockquote>
-                    <img src="https://assets.stickpng.com/thumbs/58f37709a4fa116215a9240d.png"
+                    <img src="../src/assets/morty.png"
                         className="img__card img--bottom img--right"
                         id="rick-sit"
                         height={150}
