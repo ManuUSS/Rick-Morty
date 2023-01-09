@@ -19,12 +19,15 @@ export const NavMenu = () => {
         </NavLink>
         <div className="menu_mobile">
             <input id="menu_toggle" type="checkbox" />
-            <label class="menu_btn" for="menu_toggle">
+            <label className="menu_btn" htmlFor="menu_toggle">
             <span></span>
             </label>
             <ul className="menu_box">
                 { navItems.map( ( {display, path}, i ) => (
-                        <li className="menu_item">
+                        <li 
+                            className="menu_item"
+                            key={`${display}-mobile`}
+                        >
                             <NavItem 
                                 key={display + i} 
                                 title={display}

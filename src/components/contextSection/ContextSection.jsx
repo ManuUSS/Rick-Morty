@@ -44,7 +44,7 @@ export const ContextSection = () => {
                 <>
                     <blockquote>Podríamos disfrutarlo un rato. Es decir, mira lo loco que es todo
                         <br />
-                        <quote>-Morty</quote>
+                        <q>-Morty</q>
                     </blockquote>
                     <img src="../src/assets/morty.png"
                         className="img__card img--bottom-plus img--right"
