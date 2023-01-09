@@ -31,15 +31,22 @@ export const getCharacterByName = async ( name ) => {
     } catch (error) {
         console.log({ e: error });
     }
+    
 }
 
 //Petición al API de Rick & Morty para traer información de todos los personajes
-export const getAllCharacters = async ( page = 1 ) => {
+export const getAllCharacters = async ( page = 1, status ) => {
     
+    let url = `${api_url}?page=${ page }`;
+
+    if( status )
+        url = `${ api_url }/?page=${ page }&status=${ status }`;
+
     //Se realiza una petición al API con la constante creada anteriormente
     //esta consulta trae todos los personajes de Rick & Morty
-    const response = await fetch( `${api_url}?page=${ page }`);
-
+    //const response = await fetch( `${api_url}?page=${ page }`);
+    const response = await fetch( url );
+    
     //Se realiza destructuración de la respuesta JSON para que se más fácil de vista
     const { results, info } = await response.json();
     

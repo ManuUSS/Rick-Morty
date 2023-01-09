@@ -1,0 +1,6 @@
+.status_filter_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0em 5em;
+}

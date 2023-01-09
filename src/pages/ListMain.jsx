@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CardGrid } from "../components/card";
+import { StatusFilter } from "../components/filter/StatusFilter";
 import { PaginatorContainer } from "../components/pagination";
 import { Loader } from "../components/shared";
 import { ListContext } from "../context/ListContext";
@@ -17,6 +18,7 @@ export const ListMain = () => {
         
         }
             <PaginatorContainer />
+            <StatusFilter />
             <CardGrid
                 characters={ allCharacters }
             />

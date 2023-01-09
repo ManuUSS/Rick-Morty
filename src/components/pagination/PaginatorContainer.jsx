@@ -26,7 +26,7 @@ export const PaginatorContainer = () => {
               )
             }
             {
-              currentPage < 42 && (
+              currentPage < pages && (
                 <>
                   <Paginator text={'Siguiente'} handlePage={ nextPage } />
                   <Paginator text={<i className="fa-solid fa-angles-right"></i>} 
