@@ -25,13 +25,9 @@ export const SearchPage = () => {
         {
           isLoading && ( <Loader /> )
         }
-        { 
-          query && (
-            <CardGrid 
+          <CardGrid 
               characters={ characters }
-            />
-          )
-        }
+          />
     </>
   )
 }

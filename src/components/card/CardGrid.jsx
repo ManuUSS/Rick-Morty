@@ -3,7 +3,6 @@ import { CardContainer } from ".";
 import './CardGrid.css';
 
 export const CardGrid = ({ characters }) => {
-
     
     return (
         <section className="card-grid--flex">
