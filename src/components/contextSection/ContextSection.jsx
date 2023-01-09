@@ -6,24 +6,18 @@ export const ContextSection = () => {
     <section className="context">
         <ContextHeader />
         <ContextItem 
-            header='Acerca de:'
+            header='Acerca de'
             text='Rick y Morty es una serie de televisión 
-            americana de animación para adultos creada por Justin Roiland y Dan Harmon 
-            en 2013 para Adult Swim, también se emitió en Cartoon Network. 
-            La serie sigue las desventuras de un científico, Rick Sanchez, y su 
-            fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica 
-            y los viajes espaciales, temporales e intergalácticos.'
+            creada por Justin Roiland y Dan Harmon 
+            en 2013 para Adult Swim, se emitió en Cartoon Network. 
+            Esta sigue las desventuras de un científico, y su 
+            nieto, quienes pasan el tiempo entre la vida doméstica, 
+            viajes espaciales, temporales e intergalácticos.'
         />
         <ContextItem 
             header='Los personajes'
             text='Aunque esta serie animada cuenta con una gran cantidad de personajes en ella,
             se mencionan que algunos de los más importantes son: Rick Sanchez, Morty, Summer, Beth y Jerry'
-            obj={ 
-                <img src="../src/assets/boladenieve.png" alt='Morty' 
-                    className='img__card img--bottom img--left' 
-                    height={130}
-                /> 
-            }
         />
         <ContextItem 
             header='Dato curioso'
@@ -53,7 +47,7 @@ export const ContextSection = () => {
                         <quote>-Morty</quote>
                     </blockquote>
                     <img src="../src/assets/morty.png"
-                        className="img__card img--bottom img--right"
+                        className="img__card img--bottom-plus img--right"
                         id="rick-sit"
                         height={150}
                     >

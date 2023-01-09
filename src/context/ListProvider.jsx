@@ -47,16 +47,19 @@ export const ListProvider = ({ children }) => {
         setPage( 1 );
     }
 
+    //Realiza un filtro de los personajes según el estado   
+    const unknownFilter = () => {
+        setStatus( 'unknown' );
+        //Se resetea la página para iniciar en la primera
+        setPage( 1 );
+    }
+    
     const resetFilter = () => {
         setStatus('');
         //Se resetea la página para iniciar en la primera
         setPage( 1 );
     }
 
-     //Realiza un filtro de los personajes según el estado   
-    const unknownFilter = () => {
-        setStatus( 'unknown' );
-    }
   
     return (
         // Muestra los datos que pueden ser consultados por los hijos mediante el atributo value

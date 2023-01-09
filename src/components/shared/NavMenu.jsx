@@ -17,7 +17,25 @@ export const NavMenu = () => {
                 className="rick-morty"
             />
         </NavLink>
-        <div>
+        <div className="menu_mobile">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+            <span></span>
+            </label>
+            <ul className="menu_box">
+                { navItems.map( ( {display, path}, i ) => (
+                        <li className="menu_item">
+                            <NavItem 
+                                key={display + i} 
+                                title={display}
+                                path={path}
+                            />
+                        </li>
+                    )) 
+                }
+            </ul>
+        </div>
+        <div className="menu_normal">
             { navItems.map( ( {display, path}, i ) => (
                     <NavItem 
                         key={display + i} 
@@ -29,4 +47,30 @@ export const NavMenu = () => {
         </div>
     </nav>
   )
+}
+
+export const NavMenuMobile = () => {
+    return (
+        <nav>
+            <NavLink to='/'>
+            <img src="../src/assets/Rick_and_Morty.png" 
+                alt="Rick and Morty Logo"
+                className="rick-morty"
+            />
+            </NavLink>
+            
+            <ul>
+                { navItems.map( ( {display, path}, i ) => (
+                        <li>
+                            <NavItem 
+                                key={display + i} 
+                                title={display}
+                                path={path}
+                            />
+                        </li>
+                    )) 
+                }
+            </ul>
+        </nav>
+    )
 }

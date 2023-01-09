@@ -5,7 +5,7 @@ export const CardCaption = ({ name, status, specie, location }) => {
   return (
     <div className='section--wrapper'>
         <div className="section caption__principal">
-            <h4>{ name }</h4>
+            <h3>{ name }</h3>
             <span className={`${status.toLowerCase()}`}
             >
               •{ status[0].toUpperCase() + status.substring(1) }

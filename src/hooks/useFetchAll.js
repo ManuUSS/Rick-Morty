@@ -16,7 +16,6 @@ export const useFetchAll = ( page = 1, status = '' ) => {
 
     //Realiza la petición al API de Rick & Morty, trae resultados por estado y página
     const getCharacters = async () => {
-        console.log( 'Me disparé' );
         setisLoading( true );
         //Realiza una desestructuración de los datos solicitados,
         //guarda los personajes y las páginas mencionadas por la respuesta
