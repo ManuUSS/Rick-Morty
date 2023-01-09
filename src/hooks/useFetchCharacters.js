@@ -18,8 +18,10 @@ export const useFetchCharacters = ( query ) => {
     const getCharacters = async () => {
         if( !query ) return;
         const charactersResponse = await getCharacterByName( query );
-        //Parsea los datos del objetos a String para poder ser almacenados en memoria
-        localStorage.setItem( localCharactersKey, JSON.stringify( charactersResponse ) );
+        //Valida que se haya realizado una búsqueda válida
+        if( charactersResponse )
+            //Parsea los datos del objetos a String para poder ser almacenados en memoria
+            localStorage.setItem( localCharactersKey, JSON.stringify( charactersResponse ) );
         setCharacters( charactersResponse );
         setisLoading( false );
     }
