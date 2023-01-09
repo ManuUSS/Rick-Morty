@@ -33,7 +33,7 @@ export const ContextSection = () => {
             obj={
                 <img src="https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-monsters-transparent-png-stickpng-2.png"
                     className="img__card img--bottom-plus img--left"
-                    height={150}
+                    height={125}
                 >
                 </img>
             }
