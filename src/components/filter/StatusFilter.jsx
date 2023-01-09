@@ -5,6 +5,8 @@ import './StatusFilter.css';
 
 export const StatusFilter = () => {
     
+    //Se desestrucuturan los objetos a utilizar para la páginación
+    //estos objetos y funciones los lee del Contexto
     const { aliveFilter, deadFilter, unknownFilter, resetFilter } = useContext( ListContext );
 
   return (

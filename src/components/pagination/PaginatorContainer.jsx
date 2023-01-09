@@ -6,6 +6,7 @@ import './PaginatorContainer.css';
 export const PaginatorContainer = () => {
 
     //Se desestrucuturan los objetos a utilizar para la páginación
+    //estos objetos y funciones los lee del Contexto
     const { pages, previousPage, nextPage, firstPage, lastPage, page: currentPage } = useContext( ListContext );
 
   return (

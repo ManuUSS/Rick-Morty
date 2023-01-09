@@ -12,6 +12,8 @@ export const StatusButton = ({ handleStatus, text }) => {
 }
 
 StatusButton.propTypes = {
+    //Representa la función a realizar por el elemento
     handleStatus: PropTypes.func.isRequired,
+    //Representa el texto para renderizar dentro del button
     text: PropTypes.string.isRequired
 }
