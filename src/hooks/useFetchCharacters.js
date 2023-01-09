@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { getAllCharacters, getCharacterByName } from '../apis/getCharacters';
+import { getCharacterByName } from '../apis/getCharacters';
 
+//Representa la clave para almacenar en el LocalStorage
 const localCharactersKey = 'characters';
 
 export const useFetchCharacters = ( query ) => {
@@ -17,14 +18,18 @@ export const useFetchCharacters = ( query ) => {
     const getCharacters = async () => {
         if( !query ) return;
         const charactersResponse = await getCharacterByName( query );
+        //Parsea los datos del objetos a String para poder ser almacenados en memoria
         localStorage.setItem( localCharactersKey, JSON.stringify( charactersResponse ) );
         setCharacters( charactersResponse );
         setisLoading( false );
     }
 
+    //Valida si hay algún objeto almacenado en el LocalStorage,
+    //este es almacenado en el estado y mostrado en pantalla en caso de que exista
     const validateStorage = () => {
         
         if( localStorage.getItem( localCharactersKey )){
+            //Parsea los datos del objetos a JSON para poder ser trabajados en el HTML
             setCharacters( JSON.parse(localStorage.getItem( localCharactersKey )) );
         }
     }
@@ -44,11 +49,6 @@ export const useFetchCharacters = ( query ) => {
         characters,
         isLoading
     }
-
-
-
-
-
 
 }
 

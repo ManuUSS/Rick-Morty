@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { NavMenu } from "../components/shared/";
 import { HomePage } from "./HomePage";
 import { ListPage } from "./ListPage";
-import { NotFoundPage } from "./NotFoundPage";
 import { SearchPage } from "./SearchPage";
 
 export const MainPage = () => {

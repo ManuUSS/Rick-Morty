@@ -32,7 +32,11 @@ export const ListProvider = ({ children }) => {
     }
   
     return (
-        <ListContext.Provider value={{ pages, previousPage, nextPage, firstPage, lastPage, allCharacters, isLoading, page }}>
+        // Muestra los datos que pueden ser consultados por los hijos mediante el atributo value
+        <ListContext.Provider value={{ pages, previousPage, nextPage, firstPage, 
+            lastPage, allCharacters, isLoading, page }}
+        >
+            {/* En esta campo se renderizan los hijos del componente */}
             { children }
         </ListContext.Provider>
   )

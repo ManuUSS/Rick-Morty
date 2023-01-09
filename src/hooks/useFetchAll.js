@@ -17,13 +17,16 @@ export const useFetchAll = ( page = 1 ) => {
     //Realiza la petición al API de Rick & Morty, trae resultados por página
     const getAll = async () => {
         setisLoading( true );
+        //Realiza una desestructuración de los datos solicitados,
+        //guarda los personajes y las páginas mencionadas por la respuesta
         const { characters: charactersResponse, pages } = await getAllCharacters( page );
         setAllCharacters( charactersResponse );
         setPages( pages )
         setisLoading( false );
     }
 
-    
+
+    //Realiza una consulta al API cada vez que se cambia a una página diferente
     useEffect(() => {
         getAll();
     }, [ page ]);
